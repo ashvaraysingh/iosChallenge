@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A44964C621E5126E003586C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44964C521E5126E003586C6 /* AppDelegate.swift */; };
-		A44964C821E5126E003586C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44964C721E5126E003586C6 /* ViewController.swift */; };
 		A44964CB21E5126E003586C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44964C921E5126E003586C6 /* Main.storyboard */; };
-		A44964CE21E5126E003586C6 /* CodingTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A44964CC21E5126E003586C6 /* CodingTest.xcdatamodeld */; };
 		A44964D021E5126F003586C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44964CF21E5126F003586C6 /* Assets.xcassets */; };
 		A44964D321E5126F003586C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44964D121E5126F003586C6 /* LaunchScreen.storyboard */; };
+		A44964DC21E512E7003586C6 /* PlanetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44964DB21E512E7003586C6 /* PlanetData.swift */; };
+		A4D7A22221E5190200F530B0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7A22121E5190200F530B0 /* HomeViewController.swift */; };
+		A4D7A22521E5197700F530B0 /* CodingTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4D7A22321E5197700F530B0 /* CodingTest.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A44964C221E5126E003586C6 /* CodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44964C521E5126E003586C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A44964C721E5126E003586C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A44964CA21E5126E003586C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A44964CD21E5126E003586C6 /* CodingTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CodingTest.xcdatamodel; sourceTree = "<group>"; };
 		A44964CF21E5126F003586C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A44964D221E5126F003586C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A44964D421E5126F003586C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44964DB21E512E7003586C6 /* PlanetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetData.swift; sourceTree = "<group>"; };
+		A4D7A22121E5190200F530B0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A4D7A22421E5197700F530B0 /* CodingTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CodingTest.xcdatamodel; sourceTree = "<group>"; };
+		A4D7A22A21E51C7E00F530B0 /* PlanetModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlanetModel+CoreDataClass.swift"; path = "CodingTest/PlanetModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4D7A22B21E51C7E00F530B0 /* PlanetModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlanetModel+CoreDataProperties.swift"; path = "CodingTest/PlanetModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		A44964B921E5126E003586C6 = {
 			isa = PBXGroup;
 			children = (
+				A4D7A22A21E51C7E00F530B0 /* PlanetModel+CoreDataClass.swift */,
+				A4D7A22B21E51C7E00F530B0 /* PlanetModel+CoreDataProperties.swift */,
 				A44964C421E5126E003586C6 /* CodingTest */,
 				A44964C321E5126E003586C6 /* Products */,
 			);
@@ -56,15 +62,32 @@
 		A44964C421E5126E003586C6 /* CodingTest */ = {
 			isa = PBXGroup;
 			children = (
+				A4D7A22021E518EA00F530B0 /* Controllers */,
+				A44964DA21E512C6003586C6 /* Models */,
 				A44964C521E5126E003586C6 /* AppDelegate.swift */,
-				A44964C721E5126E003586C6 /* ViewController.swift */,
 				A44964C921E5126E003586C6 /* Main.storyboard */,
 				A44964CF21E5126F003586C6 /* Assets.xcassets */,
 				A44964D121E5126F003586C6 /* LaunchScreen.storyboard */,
 				A44964D421E5126F003586C6 /* Info.plist */,
-				A44964CC21E5126E003586C6 /* CodingTest.xcdatamodeld */,
+				A4D7A22321E5197700F530B0 /* CodingTest.xcdatamodeld */,
 			);
 			path = CodingTest;
+			sourceTree = "<group>";
+		};
+		A44964DA21E512C6003586C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A44964DB21E512E7003586C6 /* PlanetData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4D7A22021E518EA00F530B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4D7A22121E5190200F530B0 /* HomeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A44964C821E5126E003586C6 /* ViewController.swift in Sources */,
-				A44964CE21E5126E003586C6 /* CodingTest.xcdatamodeld in Sources */,
+				A4D7A22521E5197700F530B0 /* CodingTest.xcdatamodeld in Sources */,
+				A44964DC21E512E7003586C6 /* PlanetData.swift in Sources */,
 				A44964C621E5126E003586C6 /* AppDelegate.swift in Sources */,
+				A4D7A22221E5190200F530B0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,12 +366,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A44964CC21E5126E003586C6 /* CodingTest.xcdatamodeld */ = {
+		A4D7A22321E5197700F530B0 /* CodingTest.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A44964CD21E5126E003586C6 /* CodingTest.xcdatamodel */,
+				A4D7A22421E5197700F530B0 /* CodingTest.xcdatamodel */,
 			);
-			currentVersion = A44964CD21E5126E003586C6 /* CodingTest.xcdatamodel */;
+			currentVersion = A4D7A22421E5197700F530B0 /* CodingTest.xcdatamodel */;
 			path = CodingTest.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
